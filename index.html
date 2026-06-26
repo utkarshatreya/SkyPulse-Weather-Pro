@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SkyPulse Weather Pro</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ========================= -->
+    <!-- Title -->
+    <!-- ========================= -->
+
+    <h1 class="title">
+        🌤 SkyPulse Weather Pro
+    </h1>
+
+    <!-- ========================= -->
+    <!-- Search -->
+    <!-- ========================= -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="city"
+            placeholder="Search any city...">
+
+<button id="searchBtn">
+    🔍
+</button>
+
+<button id="locationBtn">
+    📍
+</button>
+
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Date & Time -->
+    <!-- ========================= -->
+<div class="time-box">
+
+    <div>
+
+        <h3 id="date">
+            Loading Date...
+        </h3>
+
+        <h2 id="time">
+            Loading Time...
+        </h2>
+
+    </div>
+
+    <div class="toggle">
+
+        <button id="celsiusBtn" class="active">
+            °C
+        </button>
+
+        <button id="fahrenheitBtn">
+            °F
+        </button>
+
+    </div>
+
+</div>
+    <!-- ========================= -->
+    <!-- Current Weather -->
+    <!-- ========================= -->
+
+    <div class="weather-card">
+
+        <h2 id="location">
+            Search a City
+        </h2>
+
+        <div id="icon">
+            ☀️
+        </div>
+
+        <h1 id="temp">
+            --°C
+        </h1>
+
+        <h3 id="condition">
+            Weather Status
+        </h3>
+
+        <p id="feels">
+            Feels Like --°C
+        </p>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Weather Details -->
+    <!-- ========================= -->
+
+    <div class="details">
+
+        <div class="box">
+
+            <p>💧 Humidity</p>
+
+            <h3 id="humidity">
+                --
+            </h3>
+
+        </div>
+
+        <div class="box">
+
+            <p>🌬 Wind</p>
+
+            <h3 id="wind">
+                --
+            </h3>
+
+        </div>
+
+        <div class="box">
+
+            <p>🌧 Rain</p>
+
+            <h3 id="rain">
+                --
+            </h3>
+
+        </div>
+
+        <div class="box">
+
+            <p>🌫 Air Quality</p>
+
+            <h3 id="aqi">
+                Moderate
+            </h3>
+
+            <div class="aqi-bar">
+
+                <div id="aqi-fill"></div>
+
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <p>🌅 Sunrise</p>
+
+            <h3 id="sunrise">
+                --
+            </h3>
+
+        </div>
+
+        <div class="box">
+
+            <p>🌇 Sunset</p>
+
+            <h3 id="sunset">
+                --
+            </h3>
+
+        </div>
+
+        <div class="box">
+
+            <p>🎯 Visibility</p>
+
+            <h3 id="visibility">
+                --
+            </h3>
+
+        </div>
+
+        <div class="box">
+
+            <p>🧭 Pressure</p>
+
+            <h3 id="pressure">
+                --
+            </h3>
+
+        </div>
+
+    </div>
+    <!-- ========================= -->
+    <!-- Hourly Forecast -->
+    <!-- ========================= -->
+
+    <div class="forecast-section">
+
+        <h2 class="section-title">
+            🕒 Hourly Forecast
+        </h2>
+
+        <div id="forecast"
+             class="forecast-container">
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- 5-Day Forecast -->
+    <!-- ========================= -->
+
+    <div class="forecast-section">
+
+        <h2 class="section-title">
+            📅 5-Day Forecast
+        </h2>
+
+        <div id="dailyForecast"
+             class="daily-forecast">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
